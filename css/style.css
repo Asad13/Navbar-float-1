@@ -76,7 +76,7 @@ nav#topNav .navbar-brand {
 
 #topMainMenu > .nav-item > .nav-link:hover {
   color: #33ffff;
-  box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
+  box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff, 0 0 5px 0 #66ffff;
 }
 
 .nav-dropdown {
@@ -144,6 +144,62 @@ nav#topNav .navbar-brand {
   }
 }
 
+.secondary-dropdown {
+  left: 100% !important;
+}
+
+.nav-dropdown:hover > .secondary-dropdown {
+  display: block;
+  animation-name: secondary-dropdown-animation !important;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@-moz-keyframes secondary-dropdown-animation {
+  0% {
+    top: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@-moz-keyframes secondary-dropdown-animation {
+  0% {
+    top: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@-o-keyframes secondary-dropdown-animation {
+  0% {
+    top: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes secondary-dropdown-animation {
+  0% {
+    top: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 .nav-item ul.nav-menu .nav-item {
   display: list-item;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -158,4 +214,14 @@ nav#topNav .navbar-brand {
 
 .nav-item ul.nav-menu .nav-item .nav-link:hover {
   color: #33ffff;
+}
+
+@media screen and (min-width: 769px) and (max-width: 869px) {
+  nav#topNav {
+    padding: 0 1rem;
+  }
+
+  #topMainMenu > .nav-item > .nav-link {
+    padding: 1.5vh 1rem;
+  }
 }
