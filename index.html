@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Navbar | Float</title>
 </head>
@@ -13,15 +14,29 @@
     <header>
         <nav id="topNav" class="navbar">
             <a href="#" class="navbar-brand">Dhaka Analytics</a>
+            <label for="navbtn-toggle" class="nav-btn-label toggle-container">
+                <div class="toggle-button">
+                    <div class="toggle-bars"></div>
+                    <div class="toggle-bars"></div>
+                    <div class="toggle-bars"></div>
+                </div>
+            </label>
+            <input type="checkbox" id="navbtn-toggle" class="nav-btn">
             <ul class="nav-menu" id="topMainMenu">
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item nav-dropdown">
+                    <label for="navbtn-services" class="nav-btn-label">Services <i
+                            class="fa fa-plus nav-plus"></i></label>
                     <a href="#" class="nav-link">Services</a>
+                    <input type="checkbox" id="navbtn-services" class="nav-btn">
                     <ul class="nav-menu">
                         <li class="nav-item nav-dropdown">
+                            <label for="navbtn-web" class="nav-btn-label nav-secondary-label">Web Develepment <i
+                                    class="fa fa-plus nav-plus"></i></label>
                             <a href="#" class="nav-link">Web Develepment</a>
+                            <input type="checkbox" id="navbtn-web" class="nav-btn">
                             <ul class="nav-menu secondary-dropdown">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">E-commerce Website</a>
@@ -47,7 +62,10 @@
                             </ul>
                         </li>
                         <li class="nav-item nav-dropdown">
+                            <label for="navbtn-app" class="nav-btn-label nav-secondary-label">App Development <i
+                                    class="fa fa-plus nav-plus"></i></label>
                             <a href="#" class="nav-link">App Development</a>
+                            <input type="checkbox" id="navbtn-app" class="nav-btn">
                             <ul class="nav-menu secondary-dropdown">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">Android</a>
@@ -83,6 +101,7 @@
             </ul>
         </nav>
     </header>
+
 </body>
 
 </html>
